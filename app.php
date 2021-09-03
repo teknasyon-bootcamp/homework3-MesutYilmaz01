@@ -6,10 +6,10 @@
  */
 
 require "form.php";
-
 $postForm = Form::createPostForm("globals.php");
 $getForm = Form::createGetForm("globals.php");
 $lateForm = Form::createForm("globals.php", "POST");
+
 
 function itCreateForm(Form $form): Form {
     $form->addField("Name", "name");
